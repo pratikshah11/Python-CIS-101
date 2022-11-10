@@ -18,6 +18,31 @@ print(y)'''
 print(add_numbers(4, 5))'''
 
 #replace function- this replaces some specific string with what you want
-s = "My name is Pratik."
-s1=s.replace("Pratik.", "Pratik Shah.")
+'''s = "My name is Pratik"
+s1=s.replace("Pratik", "Pratik Shah")
 print(s1)
+'''
+
+#another way of calling a function with multiple arguments
+'''def multiply(x, y):
+    return x * y
+
+a = 4
+b = 7
+operation = multiply
+print(operation(a, b))'''
+
+#use return functions while using a function
+
+#Functions can also be used as arguments of other functions.
+def add(x, y):
+    return x + y
+
+def do_twice(func, x, y):
+    return func(func(x, y), func(x, y))
+
+a = 5
+b = 10
+
+print(do_twice(add, a, b))
+
