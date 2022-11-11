@@ -46,3 +46,5 @@ b = 10
 
 print(do_twice(add, a, b))
 
+#comment- any line which starts with is # is a comment
+#Docstrings- multiple lines of comment can be saved between '''    '''
